@@ -10,13 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from lahaina device
 $(call inherit-product, device/qualcomm/lahaina/device.mk)
 
 PRODUCT_DEVICE := lahaina
-PRODUCT_NAME := omni_lahaina
+PRODUCT_NAME := twrp_lahaina
 PRODUCT_BRAND := qti
 PRODUCT_MODEL := Lahaina for arm64
 PRODUCT_MANUFACTURER := qualcomm
